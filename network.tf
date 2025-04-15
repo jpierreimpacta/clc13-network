@@ -174,7 +174,7 @@ resource "aws_nat_gateway" "nat_gw_1b" {
 
 # Correcao primeira issue
 resource "aws_flow_log" "example" {
-  log_destination      = "arn:aws:s3:::jvm-clc13-network-terraform-state"
+  log_destination      = "arn:aws:s3:::jplima-clc13-network-terraform-state"
   log_destination_type = "s3"
   traffic_type         = "ALL"
   vpc_id               = aws_vpc.minha_vpc.id
